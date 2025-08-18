@@ -37,7 +37,7 @@ fig_map = px.choropleth(
     color='Počet osob',
     hover_name='Země',
     animation_frame='Rok',
-    title=f"Mapa: Počet osob z {země} v letech {rozsah_let[0]}–{rozsah_let[1]}",
+    title=f"Mapa: Počet osob ze země {země} v letech {rozsah_let[0]}–{rozsah_let[1]}",
     color_continuous_scale='Blues'
 )
 fig_map.update_layout(
@@ -112,4 +112,5 @@ else:
     )
 
 st.plotly_chart(fig_bar)
+
 
