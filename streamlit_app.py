@@ -98,7 +98,7 @@ if animace:
         y='Počet osob',
         color='Země',
         animation_frame='Rok' if animace else None,
-        title=f'TOP 20 zemí odle počtu cizinců v ČR ({rozsah_let[0]}–{rozsah_let[1]})',
+        title=f'TOP 20 zemí podle počtu cizinců v ČR ({rozsah_let[0]}–{rozsah_let[1]})',
         labels={'Počet osob': 'Počet osob', 'Země': 'Země'},
         color_discrete_map=barvy
     )
@@ -153,5 +153,6 @@ else:
     )
 
 st.plotly_chart(fig_bar)
+
 
 
